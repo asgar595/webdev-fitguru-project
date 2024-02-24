@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>BMI Result</title>
+</head>
+<body>
+   <h1>Your BMI Result:</h1>
+   <div id="result"></div>
+
+   <script>
+       // Retrieve the result from localStorage
+       var result = localStorage.getItem('bmiResult');
+
+       // Display the result in the "result" div
+       document.getElementById('result').textContent = result;
+   </script>
+</body>
+</html>
